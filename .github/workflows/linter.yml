@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Setup Python
-        uses: action/setup-python@v2
+        uses: actions/setup-python@v3
       - name: Install dependencies
         run: |
           pip install poetry
