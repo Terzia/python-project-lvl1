@@ -1,5 +1,5 @@
 import prompt
-    
+
 
 def load_game(game):
     name = prompt.string('May I have your name? ')
