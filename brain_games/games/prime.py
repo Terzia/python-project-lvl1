@@ -2,8 +2,11 @@ import random
 import prompt
 
 
-def guess_prime():
+def question():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
+
+
+def game():
     number = random.randint(1, 30)
 
     def is_prime():
@@ -20,7 +23,3 @@ def guess_prime():
     answer = prompt.string('Your answer: ')
     correct_answer = is_prime()
     return [answer, correct_answer]
-
-
-def game():
-    return guess_prime()

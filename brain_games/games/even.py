@@ -2,8 +2,11 @@ import random
 import prompt
 
 
-def guess_even():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def question():
+      print('Answer "yes" if the number is even, otherwise answer "no".')
+
+
+def game():
     number = random.randint(1, 1000)
 
     def is_even():
@@ -16,7 +19,3 @@ def guess_even():
     answer = prompt.string('Your answer: ')
     correct_answer = is_even()
     return [answer, correct_answer]
-
-
-def game():
-    return guess_even()

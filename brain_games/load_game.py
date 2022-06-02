@@ -1,9 +1,10 @@
 import prompt
 
 
-def load_game(game):
+def load_game(game, question):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
+    print(question())
     for i in range(3):
         answer, correct_answer = game()
         if answer == correct_answer:

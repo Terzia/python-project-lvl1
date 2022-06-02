@@ -2,7 +2,11 @@ import random
 import prompt
 
 
-def progression():
+def question():
+    print('What number is missing in the progression?')
+
+
+def game():
     i = random.randint(1, 10)
     step = random.randint(1, 10)
     size = 9
@@ -16,12 +20,7 @@ def progression():
     correct_answer = lst[index]
     lst.pop(index)
     lst.insert(index, '..')
-    sequence = ' '.join(map(str, lst))
-    print('What number is missing in the progression?')
-    print(f'Question: {sequence}')
+    progression = ' '.join(map(str, lst))
+    print(f'Question: {progression}')
     ans = prompt.string('Your answer: ')
     return [int(ans), correct_answer]
-
-
-def game():
-    return progression()

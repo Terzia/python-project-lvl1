@@ -1,11 +1,18 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Brain Games - interesting mind games in training project"
 authors = ["Elena Shlius <eur1ezs@gmail.com>"]
 packages = [
   { include = "brain_games" },
 ]
+classifiers = [
+  "Operating System :: POSIX :: Linux"
+  "Programming Language :: Python :: 3.8"
+  "Topic :: Education"
+  "Topic :: Games/Entertainment"
+]
+repository = "https://github.com/Terzia/python-project-lvl1"
 
 [tool.poetry.dependencies]
 python = "^3.8"

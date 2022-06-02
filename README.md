@@ -1,7 +1,24 @@
-### Hexlet tests and linter status:
+# ***Brain Games***
+Welcome to the Brain Games!
+
+Interesting mind games in training project:
++ brain-even - guess, if given number is even or not
++ brain-calc - calculate an expression
++ brain-gcd - find the greatest common divisor of given numbers
++ brain-prime - guess, if given number prime, or not
++ brain-progression - guess the missing number in the progression
+## Requirements:
+- python = "^3.8"
+- prompt = "^0.4.1"
+<br/>
+<br/>
+## Hexlet tests and linter status:
 [![Actions Status](https://github.com/Terzia/python-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Terzia/python-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 [![Run linter](https://github.com/Terzia/python-project-lvl1/actions/workflows/linter.yml/badge.svg)](https://github.com/Terzia/python-project-lvl1/actions/workflows/linter.yml)
+<br/>
+<br/>
+## Installation process and launching of each game examples:
 [![asciicast](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66.svg)](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66)
 [![asciicast](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66.svg)](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66)
 [![asciicast](https://asciinema.org/a/oZPwZNub2f1BKqIZUFYGPhy8k.svg)](https://asciinema.org/a/oZPwZNub2f1BKqIZUFYGPhy8k)
