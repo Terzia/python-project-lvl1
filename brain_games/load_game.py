@@ -11,7 +11,7 @@ def load_game(game, question):
             print('Correct!')
             i = i + 1
             if i == 3:
-                print('Congratulations!')
+                print(f"Congratulations, {name}!")
         else:
             print(f"'{answer}' is wrong answer ;(.")
             print(f"Correct answer was '{correct_answer}'")

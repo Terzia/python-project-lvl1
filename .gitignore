@@ -4,5 +4,8 @@
 #Временные файлы редактора
 /.vscode
 
-#Зависимости
+#Environments
 /.venv
+
+#Packaging
+dist/
