@@ -1,17 +1,17 @@
-import prompt
 import random
 
+
+RANGE_BEGIN = 1
+RANGE_END = 10
 
 def question():
     print('What is the result of the expression?')
 
-
+    
 def game():
-    number1 = random.randint(1, 10)
-    number2 = random.randint(1, 10)
+    number1 = random.randint(RANGE_BEGIN, RANGE_END)
+    number2 = random.randint(RANGE_BEGIN, RANGE_END)
     op = random.choice(['+', '-', '*'])
-    expression = str(number1) + ' ' + op + ' ' + str(number2)
-    print(f'Question: {expression}')
-    ans = prompt.string('Your answer: ')
-    correct_ans = eval(expression)
-    return [int(ans), correct_ans]
+    task = str(number1) + ' ' + op + ' ' + str(number2)
+    correct_answer = str(eval(task))
+    return task, correct_answer

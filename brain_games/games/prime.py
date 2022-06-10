@@ -1,25 +1,33 @@
 import random
-import prompt
 
 
 def question():
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
-def game():
-    number = random.randint(1, 30)
+RANGE_BEGIN = 1
+RANGE_END = 30
 
-    def is_prime():
-        if number < 2:
-            return 'no'
+def create_task():
+    task = random.randint(RANGE_BEGIN, RANGE_END)
+    return task
+
+
+def is_prime(task):
+        if task < 2:
+            return False
         divider = 2
-        while divider <= number / 2:
-            if number % divider == 0:
-                return 'no'
+        while divider <= task / 2:
+            if task % divider == 0:
+                return False
             divider = divider + 1
-        return 'yes'
+        return True
 
-    print(f'Question: {number}')
-    answer = prompt.string('Your answer: ')
-    correct_answer = is_prime()
-    return [answer, correct_answer]
+
+def game():
+    task = create_task()
+    if is_prime(task):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return task, correct_answer

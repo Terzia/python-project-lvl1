@@ -1,26 +1,38 @@
 import random
-import prompt
 
+
+RANGE_BEGIN = 1
+RANGE_END = 10
+SIZE = 9
+init_term = random.randint(RANGE_BEGIN, RANGE_END)
+difference = random.randint(RANGE_BEGIN, RANGE_END)
+index = random.randint(0, SIZE - 1)
 
 def question():
     print('What number is missing in the progression?')
 
 
-def game():
-    i = random.randint(1, 10)
-    step = random.randint(1, 10)
-    size = 9
-    count = 0
-    lst = []
-    while count <= size:
-        i = i + step
+def sequence(init_term, difference):
+    count = 1
+    i = init_term
+    lst = [init_term,]
+    while count <= SIZE:
+        i = i + difference
         lst.append(i)
         count = count + 1
-    index = random.randint(0, size - 1)
-    correct_answer = lst[index]
+    return lst
+
+
+def create_task(index):
+    lst = sequence(init_term, difference)
     lst.pop(index)
     lst.insert(index, '..')
-    progression = ' '.join(map(str, lst))
-    print(f'Question: {progression}')
-    ans = prompt.string('Your answer: ')
-    return [int(ans), correct_answer]
+    task = ' '.join(map(str, lst))
+    return task
+
+
+def game():
+    task = create_task(index)
+    lst = sequence(init_term, difference)
+    correct_answer = str(lst[index])
+    return task, correct_answer

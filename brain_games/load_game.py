@@ -1,16 +1,20 @@
 import prompt
 
 
+ROUND_QUANTITY = 3
+
 def load_game(game, question):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(question())
-    for i in range(3):
-        answer, correct_answer = game()
+    for i in range(ROUND_QUANTITY):
+        task, correct_answer = game()
+        print(f'Question: {task}')
+        answer = prompt.string('Your answer: ')
         if answer == correct_answer:
             print('Correct!')
             i = i + 1
-            if i == 3:
+            if i == ROUND_QUANTITY:
                 print(f"Congratulations, {name}!")
         else:
             print(f"'{answer}' is wrong answer ;(.")

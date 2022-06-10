@@ -10,6 +10,13 @@ Interesting mind games in training project:
 ## Requirements:
 - python = "^3.8"
 - prompt = "^0.4.1"
+## Installation:
+Open a command-line prompt
+Run the following command:
+```
+$ make project-install
+```
+
 
 ## Hexlet tests and linter status:
 

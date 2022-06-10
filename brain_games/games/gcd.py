@@ -1,16 +1,17 @@
-import prompt
 import random
 import math
 
+
+RANGE_BEGIN = 1
+RANGE_END = 100
 
 def question():
     print('Find the greatest common divisor of given numbers.')
 
 
 def game():
-    number1 = random.randint(1, 100)
-    number2 = random.randint(1, 100)
-    print(f'Question: {number1} {number2}')
-    ans = prompt.string('Your answer: ')
-    correct_ans = math.gcd(number1, number2)
-    return [int(ans), correct_ans]
+    number1 = random.randint(RANGE_BEGIN, RANGE_END)
+    number2 = random.randint(RANGE_BEGIN, RANGE_END)
+    task = str(number1) + ' ' + str(number2)
+    correct_answer = str(math.gcd(number1, number2))
+    return task, correct_answer

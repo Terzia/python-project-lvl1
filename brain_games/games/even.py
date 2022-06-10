@@ -1,21 +1,26 @@
 import random
-import prompt
 
+
+RANGE_BEGIN = 1
+RANGE_END = 1000
 
 def question():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
 
+def create_task():
+    task = random.randint(RANGE_BEGIN, RANGE_END)
+    return task
+
+
+def is_even(task):
+    return task % 2 == 0
+
+
 def game():
-    number = random.randint(1, 1000)
-
-    def is_even():
-        if number % 2 == 0:
-            return 'yes'
-        else:
-            return 'no'
-
-    print(f'Question: {number}')
-    answer = prompt.string('Your answer: ')
-    correct_answer = is_even()
-    return [answer, correct_answer]
+    task = create_task()
+    if is_even(task):
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
+    return task, correct_answer
