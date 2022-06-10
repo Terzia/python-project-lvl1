@@ -8,6 +8,7 @@ init_term = random.randint(RANGE_BEGIN, RANGE_END)
 difference = random.randint(RANGE_BEGIN, RANGE_END)
 index = random.randint(0, SIZE - 1)
 
+
 def question():
     print('What number is missing in the progression?')
 
@@ -15,7 +16,7 @@ def question():
 def sequence(init_term, difference):
     count = 1
     i = init_term
-    lst = [init_term,]
+    lst = [init_term, ]
     while count <= SIZE:
         i = i + difference
         lst.append(i)

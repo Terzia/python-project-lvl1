@@ -8,20 +8,21 @@ def question():
 RANGE_BEGIN = 1
 RANGE_END = 30
 
+
 def create_task():
     task = random.randint(RANGE_BEGIN, RANGE_END)
     return task
 
 
 def is_prime(task):
-        if task < 2:
+    if task < 2:
+        return False
+    divider = 2
+    while divider <= task / 2:
+        if task % divider == 0:
             return False
-        divider = 2
-        while divider <= task / 2:
-            if task % divider == 0:
-                return False
-            divider = divider + 1
-        return True
+        divider = divider + 1
+    return True
 
 
 def game():

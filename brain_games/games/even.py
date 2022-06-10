@@ -4,6 +4,7 @@ import random
 RANGE_BEGIN = 1
 RANGE_END = 1000
 
+
 def question():
     print('Answer "yes" if the number is even, otherwise answer "no".')
 

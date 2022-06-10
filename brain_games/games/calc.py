@@ -4,10 +4,11 @@ import random
 RANGE_BEGIN = 1
 RANGE_END = 10
 
+
 def question():
     print('What is the result of the expression?')
 
-    
+
 def game():
     number1 = random.randint(RANGE_BEGIN, RANGE_END)
     number2 = random.randint(RANGE_BEGIN, RANGE_END)

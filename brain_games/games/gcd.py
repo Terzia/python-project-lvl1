@@ -5,6 +5,7 @@ import math
 RANGE_BEGIN = 1
 RANGE_END = 100
 
+
 def question():
     print('Find the greatest common divisor of given numbers.')
 

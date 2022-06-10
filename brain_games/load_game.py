@@ -3,6 +3,7 @@ import prompt
 
 ROUND_QUANTITY = 3
 
+
 def load_game(game, question):
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
