@@ -3,7 +3,6 @@ from brain_games.load_game import load_game
 
 
 def main():
-    print('Welcome to the Brain Games!')
     load_game(game, question)
 
 

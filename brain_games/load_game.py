@@ -5,6 +5,7 @@ ROUND_QUANTITY = 3
 
 
 def load_game(game, question):
+    print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
     print(question())
