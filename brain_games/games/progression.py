@@ -4,9 +4,13 @@ import random
 RANGE_BEGIN = 1
 RANGE_END = 10
 SIZE = 9
-init_term = random.randint(RANGE_BEGIN, RANGE_END)
-difference = random.randint(RANGE_BEGIN, RANGE_END)
-index = random.randint(0, SIZE - 1)
+
+
+def generate_numbers():
+    init_term = random.randint(RANGE_BEGIN, RANGE_END)
+    difference = random.randint(RANGE_BEGIN, RANGE_END)
+    index = random.randint(0, SIZE - 1)
+    return init_term, difference, index
 
 
 def question():
@@ -24,8 +28,7 @@ def sequence(init_term, difference):
     return lst
 
 
-def create_task(index):
-    lst = sequence(init_term, difference)
+def create_task(lst, index):
     lst.pop(index)
     lst.insert(index, '..')
     task = ' '.join(map(str, lst))
@@ -33,7 +36,8 @@ def create_task(index):
 
 
 def game():
-    task = create_task(index)
+    init_term, difference, index = generate_numbers()
     lst = sequence(init_term, difference)
     correct_answer = str(lst[index])
+    task = create_task(lst, index)
     return task, correct_answer
