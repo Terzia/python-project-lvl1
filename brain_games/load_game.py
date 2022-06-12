@@ -26,10 +26,10 @@ def check_answer(game, name):
 
 
 def run(game, name):
-    for i in range(ROUND_QUANTITY):
-        if check_answer(game, name):
-            i = i + 1
-            if i == ROUND_QUANTITY:
-                print(f'Congratulations, {name}!')
-        else:
+    count = 0
+    while count < ROUND_QUANTITY:
+        count = count + 1
+        if not check_answer(game, name):
             break
+        if count == 3:
+            print(f'Congratulations, {name}!')
