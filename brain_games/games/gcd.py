@@ -4,13 +4,10 @@ import math
 
 RANGE_BEGIN = 1
 RANGE_END = 100
+QUESTION = 'Find the greatest common divisor of given numbers.'
 
 
-def question():
-    print('Find the greatest common divisor of given numbers.')
-
-
-def game():
+def set_task_and_answer():
     number1 = random.randint(RANGE_BEGIN, RANGE_END)
     number2 = random.randint(RANGE_BEGIN, RANGE_END)
     task = str(number1) + ' ' + str(number2)

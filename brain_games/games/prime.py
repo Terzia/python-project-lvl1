@@ -1,17 +1,9 @@
 import random
 
 
-def question():
-    print('Answer "yes" if given number is prime. Otherwise answer "no".')
-
-
 RANGE_BEGIN = 1
 RANGE_END = 30
-
-
-def create_task():
-    task = random.randint(RANGE_BEGIN, RANGE_END)
-    return task
+QUESTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(task):
@@ -25,8 +17,8 @@ def is_prime(task):
     return True
 
 
-def game():
-    task = create_task()
+def set_task_and_answer():
+    task = random.randint(RANGE_BEGIN, RANGE_END)
     if is_prime(task):
         correct_answer = 'yes'
     else:

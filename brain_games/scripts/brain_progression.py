@@ -1,9 +1,10 @@
-from brain_games.games.progression import game, question
-from brain_games.load_game import greet_user, run
+#!/usr/bin/python
+from brain_games.games.progression import set_task_and_answer, QUESTION
+from brain_games.engine import engine
 
 
 def main():
-    run(game, greet_user(question))
+    engine(set_task_and_answer, QUESTION)
 
 
 if __name__ == '__main__':

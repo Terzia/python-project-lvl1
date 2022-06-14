@@ -3,23 +3,15 @@ import random
 
 RANGE_BEGIN = 1
 RANGE_END = 1000
-
-
-def question():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
-
-
-def create_task():
-    task = random.randint(RANGE_BEGIN, RANGE_END)
-    return task
+QUESTION = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(task):
     return task % 2 == 0
 
 
-def game():
-    task = create_task()
+def set_task_and_answer():
+    task = random.randint(RANGE_BEGIN, RANGE_END)
     if is_even(task):
         correct_answer = 'yes'
     else:
