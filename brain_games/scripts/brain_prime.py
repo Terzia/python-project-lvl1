@@ -1,10 +1,10 @@
 #!/usr/bin/python
-from brain_games.games.prime import set_task_and_answer, QUESTION
+import brain_games.games.prime as prime
 from brain_games.engine import engine
 
 
 def main():
-    engine(set_task_and_answer, QUESTION)
+    engine(prime.get_task_and_answer, prime.game_rules)
 
 
 if __name__ == '__main__':

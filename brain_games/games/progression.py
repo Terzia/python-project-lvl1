@@ -4,7 +4,9 @@ import random
 RANGE_BEGIN = 1
 RANGE_END = 10
 SIZE = 9
-QUESTION = 'What number is missing in the progression?'
+
+
+game_rules = 'What number is missing in the progression?'
 
 
 def create_progression(init_term, difference):
@@ -25,7 +27,7 @@ def create_task(progression, missing_num_index):
     return task
 
 
-def set_task_and_answer():
+def get_task_and_answer():
     init_term = random.randint(RANGE_BEGIN, RANGE_END)
     difference = random.randint(RANGE_BEGIN, RANGE_END)
     missing_num_index = random.randint(0, SIZE - 1)

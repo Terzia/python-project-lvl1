@@ -1,10 +1,10 @@
 #!/usr/bin/python
-from brain_games.games.even import set_task_and_answer, QUESTION
+import brain_games.games.even as even
 from brain_games.engine import engine
 
 
 def main():
-    engine(set_task_and_answer, QUESTION)
+    engine(even.get_task_and_answer, even.game_rules)
 
 
 if __name__ == '__main__':

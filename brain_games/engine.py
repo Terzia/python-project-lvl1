@@ -4,14 +4,14 @@ import prompt
 ROUND_QUANTITY = 3
 
 
-def engine(set_task_and_answer, QUESTION):
+def engine(get_task_and_answer, game_rules):
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f'Hello, {name}!')
-    print(QUESTION)
+    print(game_rules)
     count = 0
     while count < ROUND_QUANTITY:
-        task, correct_answer = set_task_and_answer()
+        task, correct_answer = get_task_and_answer()
         print(f'Question: {task}')
         answer = prompt.string('Your answer: ')
         count = count + 1

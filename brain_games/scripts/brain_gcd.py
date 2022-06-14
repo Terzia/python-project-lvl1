@@ -1,10 +1,10 @@
 #!/usr/bin/python
-from brain_games.games.gcd import set_task_and_answer, QUESTION
+import brain_games.games.gcd as gcd
 from brain_games.engine import engine
 
 
 def main():
-    engine(set_task_and_answer, QUESTION)
+    engine(gcd.get_task_and_answer, gcd.game_rules)
 
 
 if __name__ == '__main__':
