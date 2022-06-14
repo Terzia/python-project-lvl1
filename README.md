@@ -14,9 +14,8 @@ Interesting mind games in training project:
 Open a command-line prompt
 Run the following command:
 ```
-$ make project-install
+$ make package-install
 ```
-
 
 ## Hexlet tests and linter status:
 
@@ -27,8 +26,8 @@ $ make project-install
 <br/>
 ## Installation process and launching of each game examples:
 
-[![asciicast](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66.svg)](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66)
-[![asciicast](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66.svg)](https://asciinema.org/a/TwHBbPO6NwpmsLPccUsNe4M66)
-[![asciicast](https://asciinema.org/a/oZPwZNub2f1BKqIZUFYGPhy8k.svg)](https://asciinema.org/a/oZPwZNub2f1BKqIZUFYGPhy8k)
-[![asciicast](https://asciinema.org/a/aXnaRfPibYftYmJS7O6llhofv.svg)](https://asciinema.org/a/aXnaRfPibYftYmJS7O6llhofv)
-[![asciicast](https://asciinema.org/a/7uVOzPCFoU1TE8iEqeIpPPfXD.svg)](https://asciinema.org/a/7uVOzPCFoU1TE8iEqeIpPPfXD)
+[![asciicast](https://asciinema.org/a/jGVTZcePxAPKALeC6Faw8QHcV.svg)](https://asciinema.org/a/jGVTZcePxAPKALeC6Faw8QHcV)
+[![asciicast](https://asciinema.org/a/ONch6hNbet68MaE7fHEo7sfLJ.svg)](https://asciinema.org/a/ONch6hNbet68MaE7fHEo7sfLJ)
+[![asciicast](https://asciinema.org/a/rF6Q3VH5nERdXcxjFMkB7GiNR.svg)](https://asciinema.org/a/rF6Q3VH5nERdXcxjFMkB7GiNR)
+[![asciicast](https://asciinema.org/a/brZxkVmmJLng4tmkkMFTpTefE.svg)](https://asciinema.org/a/brZxkVmmJLng4tmkkMFTpTefE)
+[![asciicast](https://asciinema.org/a/PT6S6iiu9ItU7mNbFgG38HsYP.svg)](https://asciinema.org/a/PT6S6iiu9ItU7mNbFgG38HsYP)
